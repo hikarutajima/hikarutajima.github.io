@@ -5,48 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ただいまじゅんびちゅう⚒️</title>
     <style>
-        /* 画面全体のベース設定（背景色と上下左右の中央寄せ） */
         body {
-            background-color: #0d233a; /* 濃い青色 */
-            color: #ffffff;           /* 文字の色は白 */
+            background-color: #0d233a;
+            color: #ffffff;
             margin: 0;
-            height: 100vh;            /* 画面の高さをいっぱいに使う */
+            height: 100vh;
             display: flex;
-            justify-content: center;  /* 左右の真ん中 */
-            align-items: center;      /* 上下の真ん中 */
+            justify-content: center;
+            align-items: center;
             font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
         }
 
-        /* センターに寄せる箱全体のレイアウト */
         .container {
             text-align: center;
+            /* 改修点: スマホ両サイドの余白を設定 */
+            padding: 0 20px;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 600px; /* 横に広がりすぎないよう制限 */
         }
 
-        /* 1行目：工事中の文字スタイル */
         .maintenance-text {
             font-size: 2.2rem;
             font-weight: bold;
             letter-spacing: 0.1em;
-            margin-bottom: 25px; /* 2行目との間に少し隙間をあける */
+            margin-bottom: 25px;
         }
 
-        /* 2行目：リンク全体を横並びにするスタイル */
         .nav-links {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px; /* リンクとリンクの間のスキマ */
+            gap: 20px;
             font-size: 1.1rem;
         }
 
-        /* リンク共通の文字装飾を消す設定 */
         .nav-links a {
             color: #ffffff;
-            text-decoration: none; /* 下線を消す */
-            transition: opacity 0.2s; /* マウスを乗せたときにじわっとさせる */
+            text-decoration: none;
+            transition: opacity 0.2s;
         }
 
-        /* マウスが乗ったときにうっすら透明にする（ボタンっぽくする） */
         .nav-links a:hover {
             opacity: 0.7;
         }
@@ -58,7 +57,7 @@
         <div class="maintenance-text">ただいまこうじちゅう ⚒️</div>
 
         <div class="nav-links">
-            <a href="./blog/">BLOG</a>
+            <a href="./blog/index.html">BLOG</a>
             <span>|</span> <a href="https://twitter.com/yobai_hompo" target="_blank" rel="noopener" title="X (Twitter)">𝕏</a>
             <a href="https://instagram.com/yobai_hompo" target="_blank" rel="noopener" title="Instagram">📸</a>
             <a href="https://filmarks.com/users/gejio" target="_blank" rel="noopener" title="Filmarks">🎬</a>
