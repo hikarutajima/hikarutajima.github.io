@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>初めてのブログ投稿 | BLOG</title>
+    <style>
+        body {
+            background-color: #0d233a; /* 全体共通の濃い青色 */
+            color: #ffffff;           /* 文字の色は白 */
+            margin: 0;
+            padding: 40px 20px;       /* スマホ用の上下左右の余白 */
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px; /* 読みやすい横幅に制限 */
+        }
+
+        /* パンくずリスト（現在の位置がわかるリンク） */
+        .breadcrumbs {
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            color: #cccccc;
+        }
+        .breadcrumbs a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
+        .post-date {
+            font-size: 0.9rem;
+            color: #cccccc;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            line-height: 1.4;
+            margin: 0 0 20px 0;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 15px;
+        }
+
+        /* ブログ本文のスタイル */
+        .post-content {
+            font-size: 1rem;
+            line-height: 1.8; /* 行間を広げて読みやすく */
+            color: #e0e0e0;
+        }
+
+        /* 本文内の段落の間隔 */
+        .post-content p {
+            margin-bottom: 1.5em;
+        }
+
+        /* 記事一覧へ戻るボタン */
+        .back-to-list {
+            margin-top: 50px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 20px;
+        }
+        .back-to-list a {
+            color: #38ef7d;
+            text-decoration: none;
+        }
+        .back-to-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 改善案：階層をわかりやすくするパンくずリスト -->
+        <div class="breadcrumbs">
+            <a href="../index.html">HOME</a> ＞ <a href="./index.html">BLOG一覧</a> ＞ 記事本文
+        </div>
+
+        <article>
+            <div class="post-date">公開日：2026年07月10日</div>
+            <h1>*1</h1>
+
+            <div class="post-content">
+                <p>いい加減にやっていきます</p>
+            </div>
+        </article>
+
+        <div class="back-to-list">
+            <a href="./index.html">← 記事一覧へ戻る</a>
+        </div>
+    </div>
+
+</body>
+</html>
