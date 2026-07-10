@@ -3,32 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ただいまじゅんびちゅう</title>
+    <title>ただいまじゅんびちゅう⚒️</title>
     <style>
-        /* 画面全体のデザイン（背景色や上下左右の真ん中寄せ） */
+        /* 画面全体のベース設定（背景色と上下左右の中央寄せ） */
         body {
             background-color: #0d233a; /* 濃い青色 */
             color: #ffffff;           /* 文字の色は白 */
             margin: 0;
             height: 100vh;            /* 画面の高さをいっぱいに使う */
             display: flex;
-            justify-content: center;  /* 左右の真ん中に配置 */
-            align-items: center;      /* 上下の真ん中に配置 */
+            justify-content: center;  /* 左右の真ん中 */
+            align-items: center;      /* 上下の真ん中 */
             font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
         }
-        /* 工事中文字のデザイン */
+
+        /* センターに寄せる箱全体のレイアウト */
+        .container {
+            text-align: center;
+        }
+
+        /* 1行目：工事中の文字スタイル */
         .maintenance-text {
-            font-size: 2rem;          /* 文字の大きさ */
-            font-weight: bold;        /* ふと文字 */
-            text-align: center;       /* 文字の芯を中央に */
-            letter-spacing: 0.1em;    /* 文字の間隔 */
+            font-size: 2.2rem;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            margin-bottom: 25px; /* 2行目との間に少し隙間をあける */
+        }
+
+        /* 2行目：リンク全体を横並びにするスタイル */
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* リンクとリンクの間のスキマ */
+            font-size: 1.1rem;
+        }
+
+        /* リンク共通の文字装飾を消す設定 */
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none; /* 下線を消す */
+            transition: opacity 0.2s; /* マウスを乗せたときにじわっとさせる */
+        }
+
+        /* マウスが乗ったときにうっすら透明にする（ボタンっぽくする） */
+        .nav-links a:hover {
+            opacity: 0.7;
         }
     </style>
 </head>
 <body>
 
-    <div class="maintenance-text">
-        <div>ただいまじゅんびちゅう⚒️</div>
+    <div class="container">
+        <div class="maintenance-text">工事中 ⚒️</div>
+
+        <div class="nav-links">
+            <a href="./blog/">BLOG</a>
+            <span>|</span> <a href="https://twitter.com/yobai_hompo" target="_blank" rel="noopener" title="X (Twitter)">𝕏</a>
+            <a href="https://instagram.com/yobai_hompo" target="_blank" rel="noopener" title="Instagram">📸</a>
+            <a href="https://filmarks.com/users/gejio" target="_blank" rel="noopener" title="Filmarks">🎬</a>
+        </div>
     </div>
 
 </body>
