@@ -50,6 +50,18 @@
             opacity: 0.7;
         }
     </style>
+    <script>
+        // ページが読み込まれたら実行
+        window.addEventListener('DOMContentLoaded', () => {
+            // URLに「?」が含まれているか（パラメーターがあるか）チェック
+            if (window.location.search) {
+                // パラメーターを除いた本来のURL（https://hikarutajima.org/）を取得
+                const cleanURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                // ブラウザの履歴を更新して、アドレスバーの表示を綺麗にする
+                window.history.replaceState({}, document.title, cleanURL);
+            }
+        });
+    </script>
 </head>
 <body>
 
